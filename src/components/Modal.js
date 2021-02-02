@@ -4,7 +4,6 @@ const MyModal = ({data, setData, showModal, setShowModal}) => {
     const [name, setName] = useState('');
     const [job, setJob] = useState('');
     const [email, setEmail] = useState('');
-    const [errors, setErrors] = useState(['email', 'job', 'name'])
     function changeName(event) {
       setName(event.target.value);
     }

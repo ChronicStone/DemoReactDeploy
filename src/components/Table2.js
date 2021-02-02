@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 
-const TableHeader = ({setSortOrder}) => {
-    function updateSortOrder(key) {
-        setSortOrder(key);
-    }
-
+const TableHeader = () => {
     return(
         <thead>
             <tr>

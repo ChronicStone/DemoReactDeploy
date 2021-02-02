@@ -2,8 +2,8 @@ import axios from "axios"
 
 const MyModalButton = ({type, data, setData, setShowModal}) => {
     function triggerAction() {
-        type == 'modal' && setShowModal(true)
-        type == 'random' && generateRandomUser()
+        type === 'modal' && setShowModal(true)
+        type === 'random' && generateRandomUser()
     }
 
     function generateRandomUser() {
@@ -30,7 +30,7 @@ const MyModalButton = ({type, data, setData, setShowModal}) => {
             setData([...data, ...newUsers])
         })
     }
-    return (<button className={ type == 'modal' ? 'BtnAddUsersModal' : 'BtnAddUsersRandom' } onClick={triggerAction}>{ type == 'modal' ? '+' : 'R'}</button>)
+    return (<button className={ type === 'modal' ? 'BtnAddUsersModal' : 'BtnAddUsersRandom' } onClick={triggerAction}>{ type === 'modal' ? '+' : 'R'}</button>)
 }
 
 export default MyModalButton
