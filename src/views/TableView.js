@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Table2 from "../components/Table2.js"
-import Header from "../components/Header.js"
 import MyModal from "../components/Modal.js";
 import MyModalButton from "../components/ModalButton.js";
-import Counter from "../components/Counter.js"
 
 const TableView = () => {
     const [data, setData] = useState([]);
